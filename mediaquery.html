@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: cadetblue;
+            text-align: center;
+        }
+        .box{
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            font-size: 24px;
+            width: 100%;
+            background-color: crimson;
+        }
+        @media(min-width:700px)
+        {
+            .box{
+                width: 700px;
+                background-color: bisque;
+            }
+             .desktop-view{
+                width: 50%;
+                margin: auto;
+                padding: 20px;
+                background-color: blueviolet;
+                font-size: 22px;
+                border-radius: 10px
+            }
+        }
+        @media(max-width:600px)
+        {
+           .desktop-view{
+            width: 100%;
+            background: orangered;
+           }
+        }
+        @media(orientation: landscape)
+        {
+            body{
+                background: red;
+                color: blanchedalmond;
+            }
+        }
+    </style>
+    <title>Media Queries</title>
+</head>
+<body>
+<h1>Media Queries Example</h1>
+<div class="box">Mobile first view</div>
+<div class="desktop-view">Desktop view</div>
+    
+</body>
+</html>
