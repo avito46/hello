@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merging Cells in Table</title>
+</head>
+<body>
+
+    <!-- Table demonstrating rowspan and colspan -->
+    <table border="1">
+
+        <!-- First row -->
+        <tr>
+            <!-- 
+                rowspan="2" merges this cell vertically across 2 rows 
+                This header will cover both header rows
+            -->
+            <th rowspan="2">Name</th>
+
+            <!-- 
+                colspan="2" merges this cell horizontally across 2 columns 
+                This header covers Math and Science
+            -->
+            <th colspan="2">Subjects</th>
+        </tr>
+
+        <!-- Second row (only subject headers) -->
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+        </tr>
+
+        <!-- Data row -->
+        <tr>
+            <td>Alice</td>
+            <td>90</td>
+            <td>85</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
