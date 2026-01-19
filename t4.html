@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Level 4 – align-items</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 200px;              /* Needed to see vertical alignment */
+            border: 1px solid #000;
+            margin-bottom: 25px;
+            padding: 10px;
+        }
+
+        .flex-start {
+            align-items: flex-start;   /* Top */
+        }
+
+        .center {
+            align-items: center;       /* Vertical center */
+        }
+
+        .flex-end {
+            align-items: flex-end;     /* Bottom */
+        }
+
+        .stretch {
+            align-items: stretch;      /* Fill full height */
+        }
+
+        .baseline {
+            align-items: baseline;     /* Align text baseline */
+        }
+
+        .box {
+            width: 60px;
+            background-color: tomato;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        /* Different heights to clearly show effects */
+        .box1 { height: 40px; line-height: 40px; }
+        .box2 { height: 70px; line-height: 70px; }
+        .box3 { height: 100px; line-height: 100px; }
+
+        h3 {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h3>align-items: flex-start</h3>
+<div class="container flex-start">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+</div>
+
+<h3>align-items: center</h3>
+<div class="container center">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+</div>
+
+<h3>align-items: flex-end</h3>
+<div class="container flex-end">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+</div>
+
+<h3>align-items: stretch</h3>
+<div class="container stretch">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+<h3>align-items: baseline</h3>
+<div class="container baseline">
+    <div class="box box1">Text</div>
+    <div class="box box2">Text</div>
+    <div class="box box3">Text</div>
+</div>
+
+</body>
+</html>
