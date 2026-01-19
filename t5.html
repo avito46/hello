@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Level 5 – Center Everything</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;   /* Horizontal centering (main axis) */
+            align-items: center;       /* Vertical centering (cross axis) */
+            height: 250px;
+            background-color: lightgray;
+        }
+
+        .box {
+            width: 60px;
+            height: 60px;
+            background-color: tomato;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+</body>
+</html>
