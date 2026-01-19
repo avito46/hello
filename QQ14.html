@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete Form Example (Q9–Q13)</title>
+</head>
+<body>
+
+<!-- 
+Form Attributes:
+action        → URL where form data will be sent
+method        → HTTP method used to send data
+target        → Where the response will open
+autocomplete  → Enables/disables browser autofill
+-->
+<form action="/submit" method="post" target="_blank" autocomplete="on">
+
+    <!-- Q9: Basic text input -->
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" placeholder="Username">
+    <br><br>
+
+    <!-- Q10: Password input -->
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password">
+    <br><br>
+
+    <!-- Q10: Radio buttons -->
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <br><br>
+
+    <!-- Q10: Checkbox -->
+    <input type="checkbox" name="subscribe"> Subscribe to newsletter
+    <br><br>
+
+    <!-- Q11: Fieldset and Legend -->
+    <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+
+        <!-- Q12: Select and Option -->
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="">--Select--</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <!-- Q13: Textarea -->
+    <label for="message">Message:</label>
+    <br>
+    <textarea name="message" id="message" rows="4" cols="30"></textarea>
+    <br><br>
+
+    <!-- Q13: Buttons -->
+    <button type="submit">Send</button>
+    <button type="reset">Clear</button>
+
+</form>
+
+</body>
+</html>
