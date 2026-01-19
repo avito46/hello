@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Input Validation Example</title>
+</head>
+<body>
+
+<form>
+    <!-- Required text input with minimum and maximum length -->
+    <label for="username">Username:</label>
+    <input 
+        type="text" 
+        name="username" 
+        id="username"
+        required              <!-- field must not be empty -->
+        minlength="3"         <!-- minimum 3 characters -->
+        maxlength="15">       <!-- maximum 15 characters -->
+    <br><br>
+
+    <!-- Required email input with built-in email validation -->
+    <label for="email">Email:</label>
+    <input 
+        type="email" 
+        name="email" 
+        id="email"
+        required>             <!-- must be a valid email format -->
+    <br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
