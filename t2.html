@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Direction – All in One</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            margin-bottom: 20px;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+
+        .row {
+            flex-direction: row;
+        }
+
+        .row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .column-reverse {
+            flex-direction: column-reverse;
+        }
+
+        .box {
+            width: 60px;
+            height: 60px;
+            background-color: tomato;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+            margin: 5px;
+        }
+
+        h3 {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h3>flex-direction: row</h3>
+<div class="container row">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+<h3>flex-direction: row-reverse</h3>
+<div class="container row-reverse">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+<h3>flex-direction: column</h3>
+<div class="container column">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+<h3>flex-direction: column-reverse</h3>
+<div class="container column-reverse">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+</body>
+</html>
